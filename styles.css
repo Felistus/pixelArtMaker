@@ -1,0 +1,83 @@
+body {
+    text-align: center;
+    background: linear-gradient(90deg, #355c7d, #6c5b7b, #c06c84);
+    font-family: serif;
+}
+.box{
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0.2em;
+    color: #1C18A7  ;
+    box-shadow: 2px 4px 4px #A1BAE9;
+    text-shadow: 1px 1px 2px pink;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    color: #DF1B2D;
+    text-shadow: 1px 1px 2px #355C7D;
+    margin-bottom: 15px;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+#colorPicker{
+        border-radius: 2px;
+}
+
+input[type=number] {
+    width: 6em;
+    border-radius: 2px;
+}
+
+input[value="draw grid"], 
+input[type="button"]{
+    color: brown;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 3px;
+    border:1px solid blue;
+}
+
+form {
+    color: brown;
+}
+
+@media only screen and (max-width: 450px){
+    input, label {
+        display: block;
+        margin:auto;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+}
