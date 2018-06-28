@@ -14,15 +14,15 @@ body {
 h1 {
     font-size: 70px;
     margin: 0.2em;
-    color: #1C18A7  ;
+    color: #1c18a7  ;
     box-shadow: 2px 4px 4px #355c7d;
     text-shadow: 1px 1px 2px pink;
 }
 
 h2 {
     margin: 1em 0 0.25em;
-    color: #DF1B2D;
-    text-shadow: 1px 1px 2px #355C7D;
+    color: #df1b2d;
+    text-shadow: 1px 1px 2px #355c7d;
     margin-bottom: 15px;
 }
 
@@ -53,20 +53,22 @@ td {
         border-radius: 2px;
 }
 
-input[type=number] {
+input[type="number"] {
     width: 6em;
     border-radius: 2px;
 }
+
 input[type="button"]{
     display: none;
 }
+
 input[value="draw grid"], 
-input[type="button"]{
+input[type="button"] {
     color: brown;
     border-radius: 3px;
     margin-bottom: 10px;
     padding: 3px;
-    border:1px solid blue;
+    border: 1px solid blue;
 }
 
 form {
@@ -76,7 +78,7 @@ form {
 @media only screen and (max-width: 450px){
     input, label {
         display: block;
-        margin:auto;
+        margin: auto;
     }
 
     h1, h2 {
