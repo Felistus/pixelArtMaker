@@ -15,7 +15,7 @@ h1 {
     font-size: 70px;
     margin: 0.2em;
     color: #1C18A7  ;
-    box-shadow: 2px 4px 4px #A1BAE9;
+    box-shadow: 2px 4px 4px #355c7d;
     text-shadow: 1px 1px 2px pink;
 }
 
@@ -57,7 +57,9 @@ input[type=number] {
     width: 6em;
     border-radius: 2px;
 }
-
+input[type="button"]{
+    display: none;
+}
 input[value="draw grid"], 
 input[type="button"]{
     color: brown;
