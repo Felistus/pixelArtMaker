@@ -10,25 +10,24 @@
     <body>
         <div class="box">
             <h1>Lab: Pixel Art Maker</h1>
-            <!-- <h2>Pixel Art Maker</h2> -->
             <h2>Choose Grid Size</h2>
-            <form id="sizePicker">
+            <form id="size-picker">
                 Grid Height:
-                <input type="number" id="inputHeight" name="height" min="1" value="1">
+                <input type="number" id="input-height" name="height" min="1" value="1">
                 Grid Width:
-                <input type="number" id="inputWeight" name="width" min="1" value="1">
+                <input type="number" id="input-weight" name="width" min="1" value="1">
                 <input type="submit" value="draw grid">
             </form>
 
             <h2>Pick A Color</h2>
-            <input type="color" id="colorPicker">
+            <input type="color" id="color-picker">
 
             <h2>Design Canvas</h2>
             <form>
-                <input type="button" value="delete grid" id="removeGrid">
-                <input type="button" value="wipe color" id="wipeGridColor">
-            </form>
-            <table id="pixelCanvas"></table>
+	            <input type="button" value="delete grid" id="remove-grid">
+	            <input type="button" value="wipe color" id="wipe-grid-color">
+			</form>
+            <table id="pixel-canvas"></table>
             
             <script src="designs.js"></script>
         </div>
