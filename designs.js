@@ -6,30 +6,32 @@
   //resets the values of the inputField to default value of '1' on submit
   //displays the hiden buttons
 $(document).ready( () =>{
-  $('#sizePicker').submit((e) =>{
+  $('#size-picker').submit((e) =>{
     e.preventDefault();
-    const gridHeight = $('#inputHeight').val();
-    const gridWidth = $('#inputWeight').val();
-    $('#inputHeight, #inputWeight').val(1);
-    $('#removeGrid, #wipeGridColor').show();
+    const gridHeight = $('#input-height').val();
+    const gridWidth = $('#input-weight').val();
+    $('#input-height, #input-weight').val(1);
+    $('#remove-grid, #wipe-grid-color').show();
     makeGrid(gridHeight, gridWidth);
   });
-  
-//creates the grid using the values of the gridSizes
+/**
+* @description creates the grid using the values of the gridSizes
+* @param {number} gridHeight
+* @param {number} gridWidth
+**/
   const makeGrid = (gridHeight, gridWidth) =>{
     $('tr').remove();
     for (let row = 1; row <= gridHeight; row++) {
-      $('#pixelCanvas').append('<tr></tr>');
+      $('#pixel-canvas').append('<tr></tr>');
       for (let column = 1; column <= gridWidth; column++) {
         $('tr').filter(':last').append('<td></td>');
       }
     }assignColor();
   };
-
-//addsColor to the cells when clickedUpon using the conditional statement
+//a listener that adds color to the cells & removes color when clicked upon 
   const assignColor = () =>{
     $('td').click(function(){
-      const color = $('#colorPicker').val();
+      const color = $('#color-picker').val();
       if ($(this).attr('style')) { 
         $(this).removeAttr('style');
       } else {
@@ -37,12 +39,12 @@ $(document).ready( () =>{
       }
     });
   };
-
-  $('#removeGrid').click(() => {  //deletes the entire grid
-    $('#pixelCanvas').find('tr').remove(); 
-      $('#removeGrid, #wipeGridColor').hide();
+  
+  $('#remove-grid').click(() => {  //a listener that deletes the entire grid
+    $('#pixel-canvas').find('tr').remove(); 
+      $('#remove-grid, #wipe-grid-color').hide();
   });
-  $('#wipeGridColor').click(() =>{  //wipes multiple colors off the gridcells
+  $('#wipe-grid-color').click(() =>{  //a listener that wipes multiple colors off the gridcells
     $('td').removeAttr('style');
   });
 });
